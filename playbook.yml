@@ -1,0 +1,19 @@
+---
+
+##
+# Configure the BIRD environment
+##
+
+- name: Gather all facts
+  hosts: all
+  become: true
+  gather_facts: true
+
+- name: Install BIRD
+  hosts: bird-serv
+  become: true
+  tags:
+    - bird
+    - anycast
+  roles:
+    - { role: bird }
