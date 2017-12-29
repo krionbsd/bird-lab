@@ -3,5 +3,5 @@
 # BIRD Role
 - src: https://github.com/krionbsd/bird-ansible.git
   scm: git
-  version: v0.1
+  version: v0.2
   name: bird
